@@ -1,6 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('nav ul li a');
     const sections = document.querySelectorAll('section');
+    const typewriterElement = document.getElementById('typewriter');
+    const typewriterText = "Pruthvi Patel";
+
+    let i = 0;
+
+    function typeWriter() {
+        if (i < typewriterText.length) {
+            typewriterElement.innerHTML += typewriterText.charAt(i);
+            i++;
+            setTimeout(typeWriter, 150);
+        }
+    }
+
+    typeWriter();
 
     window.addEventListener('scroll', () => {
         let current = '';
