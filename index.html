@@ -13,36 +13,40 @@
 </head>
 <body>
     <header class="header animate__animated animate__fadeInDown">
+        <div class="header-animation">
+            <!-- Increased number of bubbles to 50-60 for a dynamic effect -->
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <!-- ...repeat for more bubbles... -->
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
         <div class="header-content">
             <div class="header-text">
-                <h1>Pruthvi Patel</h1>
+                <div class="name-container">
+                    <span class="line"></span>
+                    <h1 id="typewriter"></h1>
+                    <span class="line"></span>
+                </div>
                 <p>Software Developer</p>
                 <p>Open To Relocate</p>
-                <p class="contact-details">
-                    <a class="email" href="mailto:patel5pu@mail.uc.edu"><i class="fas fa-envelope"></i> patel5pu@mail.uc.edu</a> | 
-                    <i class="fas fa-phone"></i> (513) 837-3016 | 
-                    <a class="linkedin" href="https://www.linkedin.com/in/pruthvipatel67/"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                </p>
+                <div class="contact-details">
+                    <a class="email" href="mailto:patel5pu@mail.uc.edu"><i class="fas fa-envelope"></i> patel5pu@mail.uc.edu</a>
+                    <a class="phone" href="tel:+15138373016"><i class="fas fa-phone"></i> (513) 837-3016</a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/pruthvipatel67/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
             </div>
         </div>
-        <div class="header-animation">
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-        </div>
     </header>
-    <nav>
+    <nav class="navbar">
         <ul>
-            <li><a href="#summary"><i class="fas fa-user"></i> About Me</a></li>
-            <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
-            <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
-            <li><a href="#achievements"><i class="fas fa-trophy"></i> Achievements</a></li>
-            <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
-            <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
-            <li><a href="#leadership"><i class="fas fa-users"></i> Leadership</a></li>
+            <li><a href="#summary" class="nav-item"><i class="fas fa-user"></i> About Me</a></li>
+            <li><a href="#education" class="nav-item"><i class="fas fa-graduation-cap"></i> Education</a></li>
+            <li><a href="#skills" class="nav-item"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a href="#achievements" class="nav-item"><i class="fas fa-trophy"></i> Achievements</a></li>
+            <li><a href="#experience" class="nav-item"><i class="fas fa-briefcase"></i> Experience</a></li>
+            <li><a href="#projects" class="nav-item"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="#leadership" class="nav-item"><i class="fas fa-users"></i> Leadership</a></li>
         </ul>
     </nav>
     <section id="summary" class="animate__animated animate__fadeInUp">
@@ -109,49 +113,69 @@
     </section>
     <section id="experience" class="animate__animated animate__fadeInUp">
         <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
-        <div class="experience">
-            <div class="experience-item animate__animated animate__fadeInLeft">
-                <h3>Resident Advisor</h3>
-                <p>University of Cincinnati, Ohio</p>
-                <p>August 2022 - May 2024</p>
-                <ul>
-                    <li>Orchestrated check-in and check-out processes for a community of 1200 residents, ensuring a smooth transition and maintaining safety standards.</li>
-                    <li>Spearheaded safety and compliance initiatives, leading to a 15% improvement in dormitory safety audits.</li>
-                    <li>Facilitated peer-to-peer conflict mediation sessions, reducing incident reports by over 20%.</li>
-                </ul>
-                <canvas id="advisorChart" class="chart-small"></canvas>
+        <div class="experience-timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Resident Advisor</h3>
+                    <p>University of Cincinnati, Ohio</p>
+                    <p>August 2022 - May 2024</p>
+                    <ul>
+                        <li>Orchestrated check-in and check-out processes for a community of 1200 residents, ensuring a smooth transition and maintaining safety standards.</li>
+                        <li>Spearheaded safety and compliance initiatives, leading to a 15% improvement in dormitory safety audits.</li>
+                        <li>Facilitated peer-to-peer conflict mediation sessions, reducing incident reports by over 20%.</li>
+                    </ul>
+                    <canvas id="advisorChart" class="chart-small"></canvas>
+                </div>
             </div>
-            <div class="experience-item animate__animated animate__fadeInRight">
-                <h3>Co-op, NSquair Air Conditioners</h3>
-                <p>Gujarat, India</p>
-                <p>May 2023 - July 2023</p>
-                <ul>
-                    <li>Directed IT infrastructure enhancements, leading to a 20% increase in website uptime and user satisfaction.</li>
-                    <li>Coordinated inventory management initiatives, contributing to a 10% improvement in order fulfillment accuracy and speed.</li>
-                    <li>Implemented a new inventory tracking protocol, decreasing misplacement incidents by 15%.</li>
-                </ul>
-                <canvas id="nsquairChart" class="chart-small"></canvas>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Co-op, NSquair Air Conditioners</h3>
+                    <p>Gujarat, India</p>
+                    <p>May 2023 - July 2023</p>
+                    <ul>
+                        <li>Directed IT infrastructure enhancements, leading to a 20% increase in website uptime and user satisfaction.</li>
+                        <li>Coordinated inventory management initiatives, contributing to a 10% improvement in order fulfillment accuracy and speed.</li>
+                        <li>Implemented a new inventory tracking protocol, decreasing misplacement incidents by 15%.</li>
+                    </ul>
+                    <canvas id="nsquairChart" class="chart-small"></canvas>
+                </div>
             </div>
-            <div class="experience-item animate__animated animate__fadeInLeft">
-                <h3>Co-op, University of Cincinnati IT Integrated Services Help Desk</h3>
-                <p>Cincinnati, OH</p>
-                <p>May 2022 - July 2022</p>
-                <ul>
-                    <li>Championed the development of IT service standards, resolving over 2000 IT issues and elevating customer service ratings by 25%.</li>
-                    <li>Primary contact for IT support, efficiently addressing and resolving 40+ daily inquiries, achieving a 95% customer satisfaction rate.</li>
-                    <li>Delivered comprehensive training sessions on software use and troubleshooting, increasing the efficiency of new staff onboarding by 50%.</li>
-                </ul>
-                <canvas id="ucHelpDeskChart" class="chart-small"></canvas>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Co-op, University of Cincinnati IT Integrated Services Help Desk</h3>
+                    <p>Cincinnati, OH</p>
+                    <p>May 2022 - July 2022</p>
+                    <ul>
+                        <li>Championed the development of IT service standards, resolving over 2000 IT issues and elevating customer service ratings by 25%.</li>
+                        <li>Primary contact for IT support, efficiently addressing and resolving 40+ daily inquiries, achieving a 95% customer satisfaction rate.</li>
+                        <li>Delivered comprehensive training sessions on software use and troubleshooting, increasing the efficiency of new staff onboarding by 50%.</li>
+                    </ul>
+                    <canvas id="ucHelpDeskChart" class="chart-small"></canvas>
+                </div>
             </div>
-            <div class="experience-item animate__animated animate__fadeInRight">
-                <h3>Co-op, PlastoFab Engineering</h3>
-                <p>Florida</p>
-                <p>August 2020 - November 2020</p>
-                <ul>
-                    <li>Collaborated on software updates, significantly reducing system vulnerabilities and optimizing performance.</li>
-                    <li>Engineered technical support solutions for a network of 100+ workstations, achieving a 98% issue resolution rate on first contact.</li>
-                </ul>
-                <canvas id="plastoFabChart" class="chart-small"></canvas>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Co-op, PlastoFab Engineering</h3>
+                    <p>Florida</p>
+                    <p>August 2020 - November 2020</p>
+                    <ul>
+                        <li>Collaborated on software updates, significantly reducing system vulnerabilities and optimizing performance.</li>
+                        <li>Engineered technical support solutions for a network of 100+ workstations, achieving a 98% issue resolution rate on first contact.</li>
+                    </ul>
+                    <canvas id="plastoFabChart" class="chart-small"></canvas>
+                </div>
             </div>
         </div>
     </section>
@@ -190,6 +214,9 @@
     </section>
     <section id="leadership" class="animate__animated animate__fadeInUp">
         <h2><i class="fas fa-users"></i> Leadership & Involvement</h2>
+        <div class="leadership-prompt">
+            <p>🚀📚 Uncover the Power of My Leadership: Tap to Explore.✨🌟🔍 </p>
+        </div>
         <div class="leadership-cards">
             <div class="leadership-card" onclick="toggleDetails(this)">
                 <h3>President of UC Dramatic Arts of Thespians</h3>
@@ -240,11 +267,5 @@
     <footer class="animate__animated animate__fadeInUp">
         <p>&copy; 2024 Pruthvi Patel</p>
     </footer>
-    <script>
-        function toggleDetails(card) {
-            const details = card.querySelector('.details');
-            details.style.display = details.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
 </body>
 </html>
