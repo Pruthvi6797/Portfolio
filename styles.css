@@ -46,7 +46,7 @@ header {
     font-weight: bold;
     color: white;
     background: linear-gradient(135deg, #fefefe, #afd6ff);
-    background-clip: text; /* Standard property */
+    background-clip: text; /* Standoard property */
     -webkit-background-clip: text; /* For Safari compatibility */
     color: transparent;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
