@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
     };
 
-    // Create project charts
+    // Create project chartss
     createProjectChart('nexusChart', nexusChartData);
     createProjectChart('savorChart', savorChartData);
     createProjectChart('memrepoChart', memrepoChartData);
