@@ -177,7 +177,7 @@ header {
 .bubble:nth-child(58),
 .bubble:nth-child(59),
 .bubble:nth-child(60) {
-    animation-duration: 20s;
+    animation-duration: 10s;
 }
 
 @keyframes bubble {
@@ -330,8 +330,8 @@ section h2::after {
 }
 
 .profile-picture {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     display: block;
     margin: 0 auto 1rem auto;
