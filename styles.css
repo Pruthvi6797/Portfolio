@@ -478,7 +478,7 @@ footer {
     text-align: center;
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: #f031ea;
 }
 
 @keyframes fadeInDown {
